@@ -29,3 +29,15 @@ switch(parseInt(params.get('playerNum'))){
         imagesDiv.innerHTML = `<img id="img3" src="${p3Img}" alt="">`
         break;
 }
+
+// For Playing Audio
+document.getElementById('home').addEventListener('mouseenter', () => {
+    document.getElementById('button-hover').play();
+});
+document.getElementById('home').addEventListener('click', () => {
+    document.getElementById('button-click').play();
+    setTimeout(() => {
+        window.location.href=`./landing.html`;
+    }, 1000);  
+});
+
