@@ -1,1 +1,145 @@
 @import "main.css";
+
+/* game-info */
+
+.game-info {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Players and Scores */
+
+#player1, #player2, #player3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#player1 img, #player2 img, #player3 img {
+    width: 60px;
+    height: 60px; 
+    border-radius: 100%;
+    transition: 0.2 ease-in-out;
+}
+
+#player1 div, #player2 div, #player3 div{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    
+    border-radius: 100%;
+    background-color: transparent;
+    transition: ease-in-out;
+    margin-bottom: 15px; 
+}
+
+#player1 span, #player2 span, #player3 span{
+    font-weight: bold;
+    color: white;
+}
+
+/* Grid */
+
+#grid{
+    height: 100%;
+    margin-top: 10px;
+}
+
+#grid td{
+    position:relative;
+}
+
+/* lines */
+
+.top-line, .bottom-line, .right-line, .left-line{
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+}
+
+.top-line{
+    top: -2px;
+    left: 0px;
+    width: 100%;
+    height: 15px;
+}
+
+.bottom-line{
+    bottom: -15px;
+    left: 0px;
+    width: 100%;
+    height: 15px;
+}
+
+.right-line{
+    top: 0px;
+    right: -20px;
+    width: 15px;
+    height: 100%;
+}
+
+.left-line{
+    top: 0px;
+    left: -2px;
+    width: 20px;
+    height: 100%;
+}
+
+.line-hover-vertical{
+    border-left: 5px dashed white;
+    transition: 0.2s ease-in-out; 
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.line-hover-horizontal{
+    border-top: 5px dashed white;
+    transition: 0.2s ease-in-out; 
+    cursor: pointer;
+    opacity: 80%;
+}   
+
+.line-leave{
+    border-top: none;
+}
+
+/* nodes */
+
+.up-left-corner, .up-right-corner, .down-left-corner, .down-right-corner{
+    position: absolute;
+    background-color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    z-index: 4;
+}
+
+.up-left-corner{   
+    top: -7px;
+    left: -7px;
+}
+
+.up-right-corner{   
+    top: -7px;
+    right: -10px;
+}
+
+.down-left-corner{   
+    bottom: -5px;
+    left: -7px;
+}
+
+.down-right-corner{   
+    bottom: -5px;
+    right: -10px;
+}

@@ -6,13 +6,27 @@
     display: flex;
     flex-direction: row;
     height: 350px;
+    background-color: red;
 }
 
 .vid iframe{
     display: block;
     width: 100%;
+    /* height: 60%; */
     margin-left: auto;
     margin-right: auto;
+}
+
+/* group */
+
+.group{
+    /* display: flex;
+    flex-direction: row; */
+    color: white;
+    /* justify-content: space-evenly;
+    align-items: center; */
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 /* btns */
@@ -20,23 +34,28 @@
 .btns{
     display: flex;
     flex-direction: column;
-    height: 150px;
+    /* height: 150px; */
     text-align: center;
     padding: 15px;
 }
 
+.btns label{
+    margin-right: 20px;
+}
+
 .btns select {
     font-size: 1rem;
-    width: 50%;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    background-color: rgb(239, 62, 54);
+    background-color: black;
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+    transition: 0.3s ease-in-out;
 }
 
 .btns a {
@@ -44,16 +63,24 @@
     margin-left: auto;
     margin-right: auto;
     padding: 15px;
-    width: 50%;
+    width: 30%;
     border-radius: 10px;
     border: none;
-    background-color: rgb(59, 66, 159);
-    color: white;
+    background-color: white;
+    color: black;
+    font-weight: bold;
     cursor: pointer;
     margin-top: 20px;
     text-decoration: none;
+    transition: 0.3s ease-in-out;
 }
 
-.btns a:hover, .btns select:hover{
-    border: 1px solid white;
+.btns a:hover{
+    padding: 15px 18px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.btns select:hover{
+    padding: 15px 18px;
+    box-shadow: 0px 0px 20px white;
 }

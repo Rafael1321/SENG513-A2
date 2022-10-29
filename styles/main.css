@@ -14,13 +14,14 @@ Beige: rgb(255, 255, 232)
 body{
     margin: 0;
     padding: 0;
-    color: white;
     font-family: "Montserrat", sans-serif;
     overflow: hidden;
 }
 
 h1{
     font-family: "Sofia", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* main-container */ 
@@ -32,14 +33,15 @@ h1{
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 1.0);
+    background-color: rgb(0, 0, 0);
+    position: relative;
 }
 
 /* outer card */
 
 .outer-card{
     width: 600px;
-    height: 800px; 
+    height: 750px; 
     padding: 25px;
     border-radius: 10px;
 }
@@ -52,15 +54,16 @@ h1{
     padding: 0;
     margin: 0;
     font-size: 5.0rem;
+    color: white;
 }
 
 #title1{
-    color: rgb(59, 66, 159);
     padding: 0;
+    color: white;
 }
 
 #title2{
-    color: rgb(239, 62, 54);
+    color: white;
     padding: 0;
 }
 
@@ -72,3 +75,39 @@ h1{
     justify-content: space-between;
     height: 100%;
 }
+
+/* general buttons */
+.gen-btns{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-evenly;
+    text-align: center;
+    right: 50px;
+    top: 15px;
+    width: 100px;
+}
+
+.gen-btns a svg{
+    width: 60px;
+    height: 60px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* #home svg{
+    fill: rgb(239, 62, 54);
+}
+
+#home svg:hover{
+    fill: rgb(143, 45, 39);
+}
+
+#arrow svg{
+    fill: rgb(59, 66, 159);
+}
+
+#arrow svg:hover{
+    fill: rgb(43, 47, 106);
+} */

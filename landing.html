@@ -14,10 +14,22 @@
                         <iframe src="https://www.youtube.com/embed/ZtCasewiYxo?autoplay=1&mute=1&enablejsapi=1&controls=0&playlist=ZtCasewiYxo" frameborder="0"></iframe>
                     </div>
                     <div class="btns">
-                        <select name="playerNumber">
-                            <option value="twoPlayers">2 Players</option>
-                            <option value="threePlayers">3 Players</option>
-                        </select>
+                        <div class="group">
+                            <label for="grid-sizes">Grid Size (dots): </label>
+                            <select id="grid-sizes">
+                                <option value="threeByThree">3 x 3</option>
+                                <option value="fourByFour">4 x 4</option>
+                                <option value="fiveByFour">5 x 4</option>
+                                <option value="sizeByFour">6 x 4</option>
+                            </select>
+                        </div>
+                        <div class="group">
+                            <label for="player-num">Num of Players:</label>
+                            <select id="player-num">
+                                <option value="twoPlayers">2 Players</option>
+                                <option value="threePlayers">3 Players</option>
+                            </select>
+                        </div>
                         <a href="/game.html">Play</a>
                     </div>
                 </div>
