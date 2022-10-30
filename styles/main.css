@@ -1,26 +1,16 @@
-/* 
-Color Palette: https://coolors.co/ffb2e6-d972ff-8447ff-8cffda-ffffe8
-
-Cotton Candy: rgb(255, 178, 230)
-Heliotrope: rgb(217, 114, 255)
-Purple X 11: rgb(132, 71, 255)
-Aquamarine: rgb(140, 255, 218)
-Beige: rgb(255, 255, 232)
-
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Sofia&display=swap');
 
 body{
     margin: 0;
     padding: 0;
-    color: white;
     font-family: "Montserrat", sans-serif;
     overflow: hidden;
 }
 
 h1{
     font-family: "Sofia", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* main-container */ 
@@ -32,14 +22,15 @@ h1{
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 1.0);
+    background-color: rgb(0, 0, 0);
+    position: relative;
 }
 
 /* outer card */
 
 .outer-card{
     width: 600px;
-    height: 800px; 
+    height: 750px; 
     padding: 25px;
     border-radius: 10px;
 }
@@ -52,15 +43,16 @@ h1{
     padding: 0;
     margin: 0;
     font-size: 5.0rem;
+    color: white;
 }
 
 #title1{
-    color: rgb(59, 66, 159);
     padding: 0;
+    color: white;
 }
 
 #title2{
-    color: rgb(239, 62, 54);
+    color: white;
     padding: 0;
 }
 
@@ -71,4 +63,37 @@ h1{
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+}
+
+.inner-card hr{
+    width: 100%;
+    padding: 1px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    opacity: 45%;
+}
+
+/* general buttons */
+.gen-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.gen-btns a svg{
+    width: 30px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 5px;
+    fill: white;
+    margin: 0 15px;
+}
+
+.gen-btns a svg:hover{
+    filter: drop-shadow(0px 0px 10px white);
 }
