@@ -14,8 +14,6 @@
 
 .message span{
     font-size: 4rem;
-    /* padding: 10px;
-    padding: 70px; */
 }
 
 .message .images{
@@ -37,7 +35,7 @@
 /* Glow Effect for Each Image */
 
 #img1{
-    box-shadow: 0rem 0rem 1.5rem 0.2rem rgb(60, 69, 206);
+    box-shadow: 0rem 0rem 1.5rem 0.8rem rgb(60, 69, 206);
 }
 
 #img2{

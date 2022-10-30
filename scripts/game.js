@@ -272,10 +272,10 @@
             event.target.style.borderLeft = `5px solid ${players[currentPlayerIdx].color()}`;
         }else{
             event.target.style.borderTop = `5px solid ${players[currentPlayerIdx].color()}`;
-        }            
-
+        }      
+    
         // Adding some colored-blur to the lines
-        event.target.style.filter = `drop-shadow(0rem 0rem 0.3rem ${players[currentPlayerIdx].color()})`;
+        event.target.style.filter = `drop-shadow(0 0 0.3rem ${players[currentPlayerIdx].color()})`;
         
         // Get rid of any previous styling
         event.target.classList.remove(isVertical?'line-hover-vertical':'line-hover-horizontal');
@@ -311,6 +311,7 @@
             let box = document.getElementById(boxId);
             box.style.background = players[currentPlayerIdx].color(0.3);
             box.style.filter = `drop-shadow(0rem 0rem 0.3rem ${players.find(p => p.playerNum === players[currentPlayerIdx].playerNum).color()})`         
+            box.style.zIndex = 0;
             playCompletedBoxSound(boxId);
         });
     }
@@ -324,7 +325,7 @@
         // Change the color of the player who plays next
         switch(players[currentPlayerIdx].playerNum){
             case 0:
-                player1Img.style.boxShadow = `0rem 0rem 1.5rem 0.2rem ${players.find(p => p.playerNum === 0).color()}`;
+                player1Img.style.boxShadow = `0rem 0rem 1.5rem 0.8rem ${players.find(p => p.playerNum === 0).color()}`;
                 player2Img.style.boxShadow = '';
                 player3Img.style.boxShadow = ''; 
                 break;

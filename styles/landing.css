@@ -2,11 +2,18 @@
 
 /* vid */
 
-.vid{
+.gif{
     display: flex;
     flex-direction: row;
-    height: 350px;
-    background-color: red;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif-content{
+    height: 330px;
+    width: 65%;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 .vid iframe{
