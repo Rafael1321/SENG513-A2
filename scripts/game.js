@@ -298,7 +298,7 @@
         if(isGameOver()){
             setTimeout(() => {
                 window.location.href=`./results.html?playerNum=${findWinner()}`;
-            }, 1000);        
+            }, 500);        
         }
 
         bringDotsToFront() // Making sure there is no overlap of lines and points
@@ -387,8 +387,8 @@
     document.getElementById('home').addEventListener('click', () => {
         document.getElementById('button-click').play();
         setTimeout(() => {
-            window.location.href=`./landing.html`;
-        }, 1000);        
+            window.location.href=`./index.html`;
+        }, 500);        
     });
     document.getElementById('restart').addEventListener('mouseenter', () => {
         document.getElementById('button-hover-2').play();
@@ -397,7 +397,7 @@
         document.getElementById('button-click').play();
         setTimeout(() => {
             window.location.href=`./game.html?width=${params.get('width')}&height=${params.get('height')}&numPlayers=${params.get('numPlayers')}`;
-        }, 1000);        
+        }, 500);        
     });
 
 /* GAME ENTRY-POINT */

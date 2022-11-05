@@ -24,6 +24,7 @@ h1{
     width: 100vw;
     background-color: rgb(0, 0, 0);
     position: relative;
+    overflow: hidden;
 }
 
 /* outer card */
@@ -96,4 +97,62 @@ h1{
 
 .gen-btns a svg:hover{
     filter: drop-shadow(0px 0px 10px white);
+}
+
+/* Media Queries */
+
+/* Landscape */ 
+
+@media screen and (orientation:landscape) and (min-width: 900px){
+
+    .outer-card{
+        transform: scale(0.9);
+        margin-bottom: auto;
+        margin-top: auto; 
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow-y:scroll;
+    }
+}
+
+/* Portrait */
+
+@media screen and (orientation:portrait) {
+
+    .outer-card{
+        transform: scale(1.8);
+    }
+
+    .main-container{
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 4.0rem;
+    }
+}
+
+@media screen and (orientation:portrait) and (min-height: 900px)  {
+
+    .outer-card{
+        transform: scale(1.5);
+    }
+
+    .main-container{
+        overflow-y: auto;
+        overflow-x: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 4.0rem;
+    }
 }

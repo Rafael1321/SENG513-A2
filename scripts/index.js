@@ -25,7 +25,7 @@ playButton.addEventListener('click', () => {
     document.getElementById("button-click").play();
     setTimeout(() => {
         window.location.href=`./game.html?width=${width}&height=${height}&numPlayers=${numPlayers}`;
-    }, 1000);
+    }, 500);
 });
 
 /* Adding Event Listeners for Playing Sound */
