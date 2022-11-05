@@ -11,17 +11,9 @@
 
 .gif-content{
     height: 330px;
-    width: 65%;
+    width: 60%;
     border-radius: 5px;
     padding: 20px;
-}
-
-.vid iframe{
-    display: block;
-    width: 100%;
-    /* height: 60%; */
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* group */
@@ -37,7 +29,6 @@
 .btns{
     display: flex;
     flex-direction: column;
-    /* height: 150px; */
     text-align: center;
     padding: 15px;
 }
@@ -86,3 +77,11 @@
 .btns select:hover{
     box-shadow: 0px 0px 10px white;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 500px) {
+    .main-container {
+      background-color: lightblue;
+    }
+  }

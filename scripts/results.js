@@ -37,7 +37,7 @@ document.getElementById('home').addEventListener('mouseenter', () => {
 document.getElementById('home').addEventListener('click', () => {
     document.getElementById('button-click').play();
     setTimeout(() => {
-        window.location.href=`./landing.html`;
-    }, 1000);  
+        window.location.href=`../index.html`;
+    }, 500);  
 });
 

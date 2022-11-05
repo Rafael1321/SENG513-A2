@@ -49,8 +49,8 @@
 /* Grid */
 
 #grid{
-    height: 100%;
-    margin-top: 10px;
+    height: 400px;
+    margin-top: 20px;
 }
 
 #grid td{
@@ -145,4 +145,27 @@
 .down-right-corner{   
     bottom: -5px;
     right: -10px;
+}
+
+/* Media Queries */
+
+@media screen and (orientation:portrait) {
+
+    #grid{
+        transform: scale(0.8);
+    }
+
+    .outer-card{
+        transform: scale(1.4);
+    }
+
+    .main-container{
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 4.0rem;
+    }
 }
