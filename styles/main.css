@@ -1,4 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Sofia&display=swap');
+
 body{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+
+h1{
+    font-family: "Sofia", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* main-container */ 
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+/* outer card */
+
+.outer-card{
+    width: 600px;
+    height: 750px; 
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* title */ 
+
+.title{
+    text-align: center;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+    font-size: 5.0rem;
+    color: white;
+}
+
+#title1{
+    padding: 0;
+    color: white;
+}
+
+#title2{
+    color: white;
+    padding: 0;
+}
+
+/* inner-card */
+
+.inner-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.inner-card hr{
+    width: 100%;
+    padding: 1px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    opacity: 45%;
+}
+
+/* general buttons */
+.gen-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.gen-btns a svg{
+    width: 30px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 5px;
+    fill: white;
+    margin: 0 15px;
+}
+
+.gen-btns a svg:hover{
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+/* Media Queries */
+
+/* Landscape */ 
+
+@media screen and (orientation:landscape) and (min-width: 900px){
+
+    .outer-card{
+        transform: scale(0.9);
+        margin-bottom: auto;
+        margin-top: auto; 
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        overflow-y:scroll;
+    }
+}
+
+/* Portrait */
+
+@media screen and (orientation:portrait) {
+
+    .outer-card{
+        transform: scale(1.8);
+    }
+
+    .main-container{
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 4.0rem;
+    }
+}
+
+@media screen and (orientation:portrait) and (min-height: 900px)  {
+
+    .outer-card{
+        transform: scale(1.5);
+    }
+
+    .main-container{
+        overflow-y: auto;
+        overflow-x: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title{
+        font-size: 4.0rem;
+    }
 }
