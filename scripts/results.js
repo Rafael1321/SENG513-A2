@@ -1,7 +1,7 @@
 // Constants 
-const p1Img = '../assets/images/cool.png'
-const p2Img = '../assets/images/happy.png'
-const p3Img = '../assets/images/happy2.png'
+const p1Img = './assets/images/cool.png'
+const p2Img = './assets/images/happy.png'
+const p3Img = './assets/images/happy2.png'
 
 // Getting query parameters from URL
 const params = new URLSearchParams(window.location.search);
@@ -37,7 +37,7 @@ document.getElementById('home').addEventListener('mouseenter', () => {
 document.getElementById('home').addEventListener('click', () => {
     document.getElementById('button-click').play();
     setTimeout(() => {
-        window.location.href=`../index.html`;
+        window.location.href=`./index.html`;
     }, 500);  
 });
 
